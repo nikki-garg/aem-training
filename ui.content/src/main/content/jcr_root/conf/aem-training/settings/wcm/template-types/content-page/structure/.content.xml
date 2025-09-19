@@ -19,6 +19,15 @@
                 sling:resourceType="aem-training/components/container"
                 editable="{Boolean}true"
                 layout="responsiveGrid"/>
+            <container2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-training/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-training/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/aem-training/us/en/site/footer/master"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
