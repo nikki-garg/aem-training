@@ -208,8 +208,6 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2025-09-11T22:19:10.101+05:30"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
@@ -241,13 +239,10 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2025-09-11T22:11:10.029+05:30"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Page "
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/apps/aem-training/components/breadcrumb,/apps/aem-training/components/button,/apps/aem-training/components/carousel,/apps/aem-training/components/form/container]"
-                    layoutDisabled="false">
+                    components="[/apps/aem-training/components/breadcrumb,/apps/aem-training/components/button,/apps/aem-training/components/carousel,/apps/aem-training/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
