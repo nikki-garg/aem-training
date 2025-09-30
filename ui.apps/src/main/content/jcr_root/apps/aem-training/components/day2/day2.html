@@ -1,0 +1,43 @@
+
+
+
+<h2>Day 2 : Operator concept </h2>
+
+<!-- Declare variables -->
+<div data-sly-set.age="${21}"></div>
+<div data-sly-set.isStudent="${true}"></div>
+<div data-sly-set.hasLibraryCard="${false}"></div>
+
+<!-- Comparison Operators (>, <, ==, !=) -->
+ <h3>Comparison Operator</h3>
+
+<p>Age is 18 or older: ${age >= 18}</p>
+
+<h3>Logical Operators</h3>
+<!-- Logical Operators (&& AND, || OR, ! NOT) -->
+<p>Can borrow books: ${(age >= 18) && hasLibraryCard}</p>
+<p>Has library access: ${isStudent || hasLibraryCard}</p>
+
+<h3>Conditional Operators</h3>
+<!-- Conditional (Ternary) Operator -->
+<p>Eligibility: ${age >= 18 ? 'Adult' : 'Minor'}</p>
+<p>Student Discount: ${isStudent ? 'Yes' : 'No'}</p>
+
+<!-- Grouping with Parentheses -->
+ <h3>Grouping with Parentheses</h3>
+<p>Special Access: ${ (isStudent && (age < 25)) || hasLibraryCard }</p>
+
+<!-- Block: Show message only if condition is true -->
+<div data-sly-test="${ (age >= 18) && isStudent }">
+   <p>Welcome Adult Student!</p>
+</div>
+<hr>
+
+<h3>List and Repeat</h3>
+<div data-sly-set.fruits="${ ['Apple', 'Banana', 'Cherry'] }"></div>
+<ul data-sly-list="${fruits}">
+   <li>${item}</li>
+</ul>
+<ul>
+  <li data-sly-repeat="${fruits}">${item}</li>
+</ul>

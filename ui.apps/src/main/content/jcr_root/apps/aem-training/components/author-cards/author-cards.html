@@ -1,0 +1,19 @@
+<div class="author-cards" data-sly-use.model="com.aem.training.core.models.AuthorCards" 
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html" >
+    <sly data-sly-list.card="${model.cards}">
+        <div class="author-card">
+            <div class="author-card__tag">${card.tagTitle}</div>
+            <div class="author-card__body">${card.description}</div>
+            <div class="author-card__footer">
+                <div class="author-card__image">
+                    <img src="${card.image}" alt="${card.authorName}" />
+                </div>
+                <div class="author-card__info">
+                    <div class="author-card__name">${card.authorName}</div>
+                    <div class="author-card__title">${card.authorTitle}</div>
+                </div>
+            </div>
+        </div>
+    </sly>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=!model.cards}"></sly>

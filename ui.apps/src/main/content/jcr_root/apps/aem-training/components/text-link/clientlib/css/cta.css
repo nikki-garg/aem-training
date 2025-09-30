@@ -1,0 +1,28 @@
+.cta {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.cta__link {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+    transition: text-decoration 0.2s;
+}
+.cta__link:hover {
+    text-decoration: underline;
+}
+.cta__icon {
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+}
+.cta__link--secondary {
+    color: #4A6FA5;
+    font-weight: normal;
+}
+.cta__link--icon {
+    color: #4A6FA5;
+}

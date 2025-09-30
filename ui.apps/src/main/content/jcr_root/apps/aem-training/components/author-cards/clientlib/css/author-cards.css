@@ -1,0 +1,59 @@
+.author-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: #11213A;
+    padding: 2rem;
+}
+.author-card {
+    background: #11213A;
+    border-radius: 16px;
+    border: 2px solid #3B4A66;
+    color: #fff;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    max-width: 320px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+.author-card__tag {
+    background: #1976D2;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.author-card__body {
+    flex: 1;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.author-card__footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.author-card__image img {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #fff;
+}
+.author-card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author-card__name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.author-card__title {
+    font-size: 0.95rem;
+    color: #B0B8C1;
+}

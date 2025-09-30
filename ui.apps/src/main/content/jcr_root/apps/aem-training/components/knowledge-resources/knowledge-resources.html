@@ -1,0 +1,25 @@
+<div  data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+    <sly data-sly-test="${!properties.title && !properties.description}">
+        <div class="cmp-knowlegde-resources__empty">
+            <p class="cmp-knowlegde-resources__empty-text">Please configure the component</p>
+        </div>
+    </sly>
+    <div class="cmp-knowlegde-resources">
+        <div class="cmp-knowlegde-resources__header">
+            <h2 class="cmp-knowlegde-resources__title">${properties.title}</h2>
+            <p class="cmp-knowlegde-resources__description">${properties.description}</p>
+        </div>
+        <div class="cmp-knowlegde-resources__items">
+            <sly data-sly-list.item="${properties.resources}">
+                <div class="cmp-knowlegde-resources__item">
+                    <a href="${item.link @ context='uri'}" class="cmp-knowlegde-resources__item-link">
+                        <img src="${item.image @ context='uri'}" alt="${item.imageAlt}" class="cmp-knowlegde-resources__item-image"/>
+                        <h3 class="cmp-knowlegde-resources__item-title">${item.title}</h3>
+                        <p class="cmp-knowlegde-resources__item-description">${item.description}</p>
+                    </a>
+                </div>
+            </sly>
+        </div>
+    </div>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=!properties.title, classAppend='cmp-knowlegde-resources'}"></sly>

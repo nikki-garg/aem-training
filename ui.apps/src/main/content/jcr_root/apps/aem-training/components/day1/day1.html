@@ -1,0 +1,30 @@
+<h2>Day 1 : Variables concept </h2>
+
+ <div>Title : ${currentPage.title} </div>
+ <div>Page Title : ${currentPage['pageTitle']}</div>
+<p>Text : ${properties.text}</p>
+<div>Time : ${currentPage.lastModified.time.toString}</div>
+
+<hr>
+
+<h2> Literals </h2>
+<div>String : ${'foo'} ${"bar"} </div>
+<div>Number : ${123} </div>
+<div>Boolean : ${true} ${false} </div>
+<div>Array : ${['A', 'B', 'C']} </div>
+<p>Raw literal: ${'This is a fixed string literal'}</p>
+
+<!-- Declare variables using data-sly-set -->
+<div data-sly-set.myVar="${'Hello, AEM HTL'}"></div>
+<div data-sly-set.num1="${10}"></div>
+<div data-sly-set.num2="${20}"></div>
+
+<!-- Use variables and literals -->
+
+<p>Message: ${myVar}</p>
+
+<!-- Iterate over array -->
+ <p>List of Numbers of 1 to 4</p>
+<ul data-sly-list="${[1,2,3,4]}">     
+  <li>${item}</li> 
+</ul>
