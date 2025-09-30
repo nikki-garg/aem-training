@@ -208,6 +208,8 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2025-09-11T22:19:10.101+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
@@ -239,10 +241,13 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2025-09-18T20:15:17.674+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Page "
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/apps/aem-training/components/breadcrumb,/apps/aem-training/components/button,/apps/aem-training/components/carousel,/apps/aem-training/components/form/container]">
+                    components="[/apps/aem-training/components/breadcrumb,/apps/aem-training/components/button,/apps/aem-training/components/carousel,/apps/aem-training/components/text-link,group:AEM Training - Content 1,/apps/aem-training/components/form/container]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -341,6 +346,65 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <button jcr:primaryType="nt:unstructured">
+                <policy_1758267483203
+                    jcr:lastModified="{Date}2025-09-19T13:09:58.817+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Button"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Type"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="button-primary"
+                                    cq:styleId="1758267501811"
+                                    cq:styleLabel="Primary"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="button-secondary"
+                                    cq:styleId="1758267506581"
+                                    cq:styleLabel="secondary"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Size"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="xs"
+                                    cq:styleId="1758267546978"
+                                    cq:styleLabel="Extra Small"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="s"
+                                    cq:styleId="1758267534567"
+                                    cq:styleLabel="Small"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="m"
+                                    cq:styleId="1758267539027"
+                                    cq:styleLabel="Medium"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="l"
+                                    cq:styleId="1758267543559"
+                                    cq:styleLabel="Large"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="xl"
+                                    cq:styleId="1758267583330"
+                                    cq:styleLabel="Extra Large"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                    </cq:styleGroups>
+                </policy_1758267483203>
+            </button>
         </components>
     </aem-training>
     <wcm jcr:primaryType="nt:unstructured">

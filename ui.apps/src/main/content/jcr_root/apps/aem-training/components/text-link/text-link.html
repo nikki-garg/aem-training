@@ -1,8 +1,29 @@
-hiii
-Variation : ${properties['variation']} <br/>
-Link Label : ${properties['linkLabel']} <br/>
-Link URL : ${properties['linkUrl']} <br/>   
-Target : ${properties['target']} <br/>
-Target1 : ${properties['target1']} <br/>
+<div class="cta" data-sly-use.template="core/wcm/components/commons/v1/templates.html" 
+    data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html"
+    data-sly-use.model="com.aem.training.core.models.TextLink">
+   
+    <sly data-sly-call="${clientlib.css @ categories='aem-training.text-link'}"/>
 
-<a href="${properties['linkUrl']}" target="${properties['target']}">${properties['linkLabel']}</a>
+    <div class="cta__primary" data-sly-test="${model.variation == 'primary'}">
+        <a href="${model.linkUrl}" target="${model.linkTarget}" class="cta__link cta__link--primary">
+            <span class="cta__text">${model.linkLabel}</span>
+            <span class="cta__icon">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+            </span>
+        </a>
+    </div>
+    <div class="cta__secondary" data-sly-test="${model.variation == 'secondary'}">
+        <a href="${model.linkUrl}" target="${model.linkTarget}" class="cta__link cta__link--secondary">
+            <span class="cta__text">${model.linkLabel}</span>
+        </a>
+    </div>
+    <div class="cta__icon-link" data-sly-test="${model.variation == 'icon'}"> 
+        <a href="${model.linkUrl}" target="${model.linkTarget}" class="cta__link cta__link--icon">
+            <span class="cta__icon">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/></svg>
+            </span>
+            <span class="cta__text">${model.linkLabel}</span>
+        </a>
+    </div>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=!model.linkLabel, classAppend='cmp-text-link'}"></sly>
