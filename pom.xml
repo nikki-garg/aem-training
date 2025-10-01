@@ -520,6 +520,12 @@ Bundle-DocURL:
         <scope>provided</scope>
       </dependency>
       <dependency>
+        <artifactId>jackson-annotations</artifactId>
+        <version>2.19.2</version>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
         <groupId>com.adobe.cq</groupId>
         <artifactId>core.wcm.components.core</artifactId>
         <version>${core.wcm.components.version}</version>
